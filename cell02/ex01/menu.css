@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    
+}
+.navbar {
+    margin-top: 10px;
+}
+.service {
+    background-color: #8b598c;
+    padding: 15px;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #8b598c;
+    min-width: 160px;
+    
+}
+.dropdown a {
+    padding:10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #4978a7;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
