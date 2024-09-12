@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const newBtn = document.getElementById('newBtn');
     const savedTodos = getCookie('todoList');
     if (savedTodos) {
-      const todos = JSON.parse(savedTodos);
+      const todos = JSON.parse(savedTodos).reverse();
       todos.forEach(todo => {
         addTodoToList(todo);
       });
